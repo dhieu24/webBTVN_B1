@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Công Việc</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row">
+        <div class="col-lg-2">
+            
+        </div>
+        <div class="col-lg-8" style="text-align: center;">
+            <h3>Danh sách công việc</h3>
+            <p>Mời bạn nhập vào công việc cần làm</p>
+            <div class="active-cyan-3 active-cyan-4 mb-4">
+                <input id="congviec" type="text" class="form-control" type="text" placeholder="Task" aria-label="Task"> 
+                <button class="btn btn-secondary btn-md" id="add" type="submit" style="margin-top: 10px;">Thêm</button>
+            </div>
+            <div id="worklist">
+                <h4>Danh sách</h4>
+                <input id="search" class="form-control" type="text" placeholder="Search" aria-label="Search">
+                <button id="search-btn" class="btn btn-secondary btn-md" type="submit" style="margin-top: 10px;" onclick="search()">Search</button>
+                <div id="works">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/af8c35088d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
